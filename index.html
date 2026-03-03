@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forja do Mestre | Facas Artesanais</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <i class="fas fa-fire-flame-curved"></i>
+        <span>Forja do Mestre</span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#contato" class="btn-nav">Fazer Encomenda</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="inicio">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-tagline">Tradição &amp; Artesanato Brasileiro</p>
+      <h1 class="hero-title">Facas Artesanais<br /><span>Forjadas com Alma</span></h1>
+      <p class="hero-desc">
+        Cada faca é uma obra única, forjada à mão com aço de alta qualidade e cabos
+        nobres. Da cozinha à natureza, temos a faca perfeita para você.
+      </p>
+      <div class="hero-btns">
+        <a href="#produtos" class="btn-primary">Ver Coleção</a>
+        <a href="#contato" class="btn-secondary">Fazer Encomenda</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Role para baixo</span>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- ===================== SOBRE ===================== -->
+  <section class="sobre" id="sobre">
+    <div class="container">
+      <div class="sobre-grid">
+        <div class="sobre-texto">
+          <span class="section-badge">Nossa História</span>
+          <h2>Mais de 20 anos forjando<br /><span>tradição e qualidade</span></h2>
+          <p>
+            A <strong>Forja do Mestre</strong> nasceu da paixão de um artesão mineiro pelo ofício
+            milenar da cutelaria. Cada peça é produzida individualmente, do aquecimento do aço
+            até o acabamento final do cabo, garantindo uma faca única e exclusiva.
+          </p>
+          <p>
+            Utilizamos apenas aços nobres — como o <strong>Aço Carbono 1095</strong>,
+            <strong>Aço Inox 440C</strong> e o resistente <strong>Aço D2</strong> —
+            combinados com cabos de madeiras nobres, osso, chifre e micarta, criando
+            peças que são ao mesmo tempo ferramentas e obras de arte.
+          </p>
+          <div class="sobre-stats">
+            <div class="stat">
+              <span class="stat-num">+2.000</span>
+              <span class="stat-label">Facas Entregues</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">20+</span>
+              <span class="stat-label">Anos de Experiência</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">100%</span>
+              <span class="stat-label">Artesanal</span>
+            </div>
+          </div>
+        </div>
+        <div class="sobre-imagem">
+          <img src="images/hero-facas.jpg" alt="Coleção de facas artesanais" loading="lazy" />
+          <div class="sobre-badge">
+            <i class="fas fa-award"></i>
+            <span>Qualidade<br />Garantida</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DIFERENCIAIS ===================== -->
+  <section class="diferenciais">
+    <div class="container">
+      <div class="diferenciais-grid">
+        <div class="diferencial-card">
+          <div class="diferencial-icon"><i class="fas fa-fire"></i></div>
+          <h3>Forjado à Mão</h3>
+          <p>Cada faca passa pelo processo tradicional de forjamento manual, garantindo resistência e unicidade.</p>
+        </div>
+        <div class="diferencial-card">
+          <div class="diferencial-icon"><i class="fas fa-leaf"></i></div>
+          <h3>Materiais Nobres</h3>
+          <p>Cabos em madeiras exóticas, osso, chifre e micarta selecionados com rigor para máxima durabilidade.</p>
+        </div>
+        <div class="diferencial-card">
+          <div class="diferencial-icon"><i class="fas fa-star"></i></div>
+          <h3>Peça Exclusiva</h3>
+          <p>Nenhuma faca é igual à outra. Cada peça é única, com características próprias do artesanato manual.</p>
+        </div>
+        <div class="diferencial-card">
+          <div class="diferencial-icon"><i class="fas fa-truck"></i></div>
+          <h3>Entrega em Todo Brasil</h3>
+          <p>Enviamos para todo o território nacional com embalagem especial e seguro de transporte.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PRODUTOS ===================== -->
+  <section class="produtos" id="produtos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Nossa Coleção</span>
+        <h2>Tipos de Facas Artesanais</h2>
+        <p>Conheça nossa linha completa de facas, cada uma desenvolvida para uma finalidade específica.</p>
+      </div>
+
+      <!-- FILTROS -->
+      <div class="filtros">
+        <button class="filtro-btn active" data-filter="all">Todas</button>
+        <button class="filtro-btn" data-filter="cozinha">Cozinha</button>
+        <button class="filtro-btn" data-filter="caca">Caça &amp; Pesca</button>
+        <button class="filtro-btn" data-filter="campo">Campo &amp; Sobrevivência</button>
+        <button class="filtro-btn" data-filter="colecao">Coleção</button>
+      </div>
+
+      <!-- GRID DE PRODUTOS -->
+      <div class="produtos-grid" id="produtosGrid">
+
+        <!-- FACA DO CHEF -->
+        <div class="produto-card" data-category="cozinha">
+          <div class="produto-img-wrap">
+            <img src="images/faca-chef.png" alt="Faca do Chef Artesanal" loading="lazy" />
+            <div class="produto-overlay">
+              <button class="btn-ver" onclick="abrirModal('chef')">Ver Detalhes</button>
+            </div>
+            <span class="produto-badge">Mais Vendida</span>
+          </div>
+          <div class="produto-info">
+            <span class="produto-categoria">Cozinha</span>
+            <h3>Faca do Chef</h3>
+            <p>Lâmina de 20 cm em aço carbono 1095, cabo em madeira de nogueira. Ideal para cortes precisos na cozinha profissional.</p>
+            <div class="produto-footer">
+              <span class="produto-preco">R$ 380,00</span>
+              <button class="btn-encomendar" onclick="irParaContato('Faca do Chef')">Encomendar</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- FACA DE COZINHA SANTOKU -->
+        <div class="produto-card" data-category="cozinha">
+          <div class="produto-img-wrap">
+            <img src="images/kitchen-knives.jpg" alt="Faca Santoku Artesanal" loading="lazy" />
+            <div class="produto-overlay">
+              <button class="btn-ver" onclick="abrirModal('santoku')">Ver Detalhes</button>
+            </div>
+          </div>
+          <div class="produto-info">
+            <span class="produto-categoria">Cozinha</span>
+            <h3>Faca Santoku</h3>
+            <p>Inspirada no estilo japonês, com lâmina de 18 cm, alvéolos anti-aderentes e cabo ergonômico em madeira de jacarandá.</p>
+            <div class="produto-footer">
+              <span class="produto-preco">R$ 420,00</span>
+              <button class="btn-encomendar" onclick="irParaContato('Faca Santoku')">Encomendar</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- CONJUNTO COZINHA -->
+        <div class="produto-card" data-category="cozinha">
+          <div class="produto-img-wrap">
+            <img src="images/chef-set.jpg" alt="Conjunto de Facas de Cozinha Artesanal" loading="lazy" />
+            <div class="produto-overlay">
+              <button class="btn-ver" onclick="abrirModal('conjunto')">Ver Detalhes</button>
+            </div>
+            <span class="produto-badge novo">Novo</span>
+          </div>
+          <div class="produto-info">
+            <span class="produto-categoria">Cozinha</span>
+            <h3>Conjunto Cozinha (6 peças)</h3>
+            <p>Kit completo com 6 facas artesanais para cozinha: chef, pão, desossa, legumes, filetar e faca de mesa. Estojo em couro incluso.</p>
+            <div class="produto-footer">
+              <span class="produto-preco">R$ 1.890,00</span>
+              <button class="btn-encomendar" onclick="irParaContato('Conjunto Cozinha 6 peças')">Encomendar</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- FACA DE CAÇA -->
+        <div class="produto-card" data-category="caca">
+          <div class="produto-img-wrap">
+            <img src="images/faca-caca.jpg" alt="Faca de Caça Artesanal" loading="lazy" />
+            <div class="produto-overlay">
+              <button class="btn-ver" onclick="abrirModal('caca')">Ver Detalhes</button>
+            </div>
+          </div>
+          <div class="produto-info">
+            <span class="produto-categoria">Caça &amp; Pesca</span>
+            <h3>Faca de Caça</h3>
+            <p>Lâmina robusta de 15 cm em aço carbono temperado, cabo em madeira e osso com bainha em couro costurado à mão.</p>
+            <div class="produto-footer">
+              <span class="produto-preco">R$ 450,00</span>
+              <button class="btn-encomendar" onclick="irParaContato('Faca de Caça')">Encomendar</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- FACA JUNGLE / PESCA -->
+        <div class="produto-card" data-category="caca">
+          <div class="produto-img-wrap">
+            <img src="images/faca-jungle.jpg" alt="Faca Jungle de Pesca" loading="lazy" />
+            <div class="produto-overlay">
+              <button class="btn-ver" onclick="abrirModal('jungle')">Ver Detalhes</button>
+            </div>
+          </div>
+          <div class="produto-info">
+            <span class="produto-categoria">Caça &amp; Pesca</span>
+            <h3>Faca Jungle / Pesca</h3>
+            <p>Lâmina fina e flexível de 17 cm para filetar peixes com precisão. Cabo antiderrapante em madeira tratada. Resistente à umidade.</p>
+            <div class="produto-footer">
+              <span class="produto-preco">R$ 320,00</span>
+              <button class="btn-encomendar" onclick="irParaContato('Faca Jungle / Pesca')">Encomendar</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- FACA DE SOBREVIVÊNCIA -->
+        <div class="produto-card" data-category="campo">
+          <div class="produto-img-wrap">
+            <img src="images/faca-sobrevivencia.jpg" alt="Faca de Sobrevivência Artesanal" loading="lazy" />
+            <div class="produto-overlay">
+              <button class="btn-ver" onclick="abrirModal('sobrevivencia')">Ver Detalhes</button>
+            </div>
+            <span class="produto-badge">Destaque</span>
+          </div>
+          <div class="produto-info">
+            <span class="produto-categoria">Campo &amp; Sobrevivência</span>
+            <h3>Faca de Sobrevivência</h3>
+            <p>Full tang em aço D2, lâmina de 22 cm com serrilha parcial, cabo em micarta G10 com lanyards. Bainha tática em kydex inclusa.</p>
+            <div class="produto-footer">
+              <span class="produto-preco">R$ 580,00</span>
+              <button class="btn-encomendar" onclick="irParaContato('Faca de Sobrevivência')">Encomendar</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- FACA GAÚCHA -->
+        <div class="produto-card" data-category="colecao">
+          <div class="produto-img-wrap">
+            <img src="images/faca-gaucha.jpg" alt="Faca Gaúcha Artesanal" loading="lazy" />
+            <div class="produto-overlay">
+              <button class="btn-ver" onclick="abrirModal('gaucha')">Ver Detalhes</button>
+            </div>
+          </div>
+          <div class="produto-info">
+            <span class="produto-categoria">Coleção</span>
+            <h3>Faca Gaúcha Tradicional</h3>
+            <p>Peça de tradição gaúcha, lâmina de 20 cm em aço carbono, cabo em chifre de boi com virola em alpaca. Bainha em couro artesanal.</p>
+            <div class="produto-footer">
+              <span class="produto-preco">R$ 520,00</span>
+              <button class="btn-encomendar" onclick="irParaContato('Faca Gaúcha Tradicional')">Encomendar</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- FACA BOWIE -->
+        <div class="produto-card" data-category="colecao">
+          <div class="produto-img-wrap">
+            <img src="images/kitchen2.jpg" alt="Faca Bowie Artesanal" loading="lazy" />
+            <div class="produto-overlay">
+              <button class="btn-ver" onclick="abrirModal('bowie')">Ver Detalhes</button>
+            </div>
+          </div>
+          <div class="produto-info">
+            <span class="produto-categoria">Coleção</span>
+            <h3>Faca Bowie Clássica</h3>
+            <p>Inspirada no clássico americano, lâmina de 25 cm em aço 1095, cabo em madeira de imbuia com proteção em latão. Peça de colecionador.</p>
+            <div class="produto-footer">
+              <span class="produto-preco">R$ 750,00</span>
+              <button class="btn-encomendar" onclick="irParaContato('Faca Bowie Clássica')">Encomendar</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- FACA BUSHCRAFT -->
+        <div class="produto-card" data-category="campo">
+          <div class="produto-img-wrap">
+            <img src="images/facas-gaucha2.jpg" alt="Faca Bushcraft Artesanal" loading="lazy" />
+            <div class="produto-overlay">
+              <button class="btn-ver" onclick="abrirModal('bushcraft')">Ver Detalhes</button>
+            </div>
+          </div>
+          <div class="produto-info">
+            <span class="produto-categoria">Campo &amp; Sobrevivência</span>
+            <h3>Faca Bushcraft</h3>
+            <p>Projetada para atividades de campo e camping. Lâmina escandinava de 12 cm em aço carbono, cabo em madeira de oliveira com textura antiderrapante.</p>
+            <div class="produto-footer">
+              <span class="produto-preco">R$ 390,00</span>
+              <button class="btn-encomendar" onclick="irParaContato('Faca Bushcraft')">Encomendar</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== GALERIA ===================== -->
+  <section class="galeria" id="galeria">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Galeria</span>
+        <h2>Nossas Obras</h2>
+        <p>Cada faca é uma história. Confira algumas das nossas criações mais recentes.</p>
+      </div>
+      <div class="galeria-grid">
+        <div class="galeria-item grande" onclick="abrirLightbox('images/hero-facas.jpg', 'Coleção Completa de Facas Artesanais')">
+          <img src="images/hero-facas.jpg" alt="Coleção de facas artesanais" loading="lazy" />
+          <div class="galeria-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+        <div class="galeria-item" onclick="abrirLightbox('images/faca-chef.png', 'Faca do Chef Artesanal')">
+          <img src="images/faca-chef.png" alt="Faca do Chef" loading="lazy" />
+          <div class="galeria-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+        <div class="galeria-item" onclick="abrirLightbox('images/faca-caca.jpg', 'Faca de Caça com Bainha')">
+          <img src="images/faca-caca.jpg" alt="Faca de caça" loading="lazy" />
+          <div class="galeria-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+        <div class="galeria-item" onclick="abrirLightbox('images/faca-gaucha.jpg', 'Faca Gaúcha Tradicional')">
+          <img src="images/faca-gaucha.jpg" alt="Faca gaúcha" loading="lazy" />
+          <div class="galeria-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+        <div class="galeria-item" onclick="abrirLightbox('images/faca-sobrevivencia.jpg', 'Faca de Sobrevivência Tática')">
+          <img src="images/faca-sobrevivencia.jpg" alt="Faca de sobrevivência" loading="lazy" />
+          <div class="galeria-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+        <div class="galeria-item" onclick="abrirLightbox('images/chef-set.jpg', 'Conjunto Completo de Cozinha')">
+          <img src="images/chef-set.jpg" alt="Conjunto de facas de cozinha" loading="lazy" />
+          <div class="galeria-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DEPOIMENTOS ===================== -->
+  <section class="depoimentos" id="depoimentos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Depoimentos</span>
+        <h2>O que nossos clientes dizem</h2>
+      </div>
+      <div class="depoimentos-slider" id="depoimentosSlider">
+        <div class="depoimento-card active">
+          <div class="depoimento-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p>"A faca do chef que encomendei superou todas as minhas expectativas. O equilíbrio é perfeito e o cabo em jacarandá é simplesmente lindo. Uso todos os dias no meu restaurante!"</p>
+          <div class="depoimento-autor">
+            <div class="autor-avatar">MR</div>
+            <div>
+              <strong>Marcos Rodrigues</strong>
+              <span>Chef de Cozinha — São Paulo/SP</span>
+            </div>
+          </div>
+        </div>
+        <div class="depoimento-card">
+          <div class="depoimento-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p>"Comprei a faca gaúcha como presente para meu pai e ele ficou emocionado. A qualidade do acabamento é incrível, parece uma peça de museu. Recomendo demais!"</p>
+          <div class="depoimento-autor">
+            <div class="autor-avatar">AS</div>
+            <div>
+              <strong>Ana Souza</strong>
+              <span>Colecionadora — Porto Alegre/RS</span>
+            </div>
+          </div>
+        </div>
+        <div class="depoimento-card">
+          <div class="depoimento-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p>"Uso a faca de sobrevivência em todas as minhas trilhas e acampamentos. Resistente, afiada e com um design que chama atenção. Atendimento do artesão foi excelente!"</p>
+          <div class="depoimento-autor">
+            <div class="autor-avatar">PL</div>
+            <div>
+              <strong>Pedro Lima</strong>
+              <span>Aventureiro — Belo Horizonte/MG</span>
+            </div>
+          </div>
+        </div>
+        <div class="depoimento-card">
+          <div class="depoimento-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+          <p>"Encomendei o conjunto de cozinha completo e ficou melhor do que esperava. As 6 facas são perfeitamente balanceadas e a bainha em couro é um charme à parte. Entrega rápida!"</p>
+          <div class="depoimento-autor">
+            <div class="autor-avatar">CF</div>
+            <div>
+              <strong>Carla Ferreira</strong>
+              <span>Gastrônoma — Curitiba/PR</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slider-controls">
+        <button class="slider-btn" id="prevBtn" onclick="mudarSlide(-1)"><i class="fas fa-chevron-left"></i></button>
+        <div class="slider-dots" id="sliderDots"></div>
+        <button class="slider-btn" id="nextBtn" onclick="mudarSlide(1)"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROCESSO ===================== -->
+  <section class="processo">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Como Trabalhamos</span>
+        <h2>Do Aço à Sua Mão</h2>
+        <p>Conheça o processo artesanal que dá vida a cada faca.</p>
+      </div>
+      <div class="processo-steps">
+        <div class="step">
+          <div class="step-num">01</div>
+          <div class="step-icon"><i class="fas fa-fire"></i></div>
+          <h3>Forjamento</h3>
+          <p>O aço é aquecido na forja e moldado com martelo e bigorna, criando a forma da lâmina.</p>
+        </div>
+        <div class="step-arrow"><i class="fas fa-chevron-right"></i></div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <div class="step-icon"><i class="fas fa-tools"></i></div>
+          <h3>Acabamento</h3>
+          <p>A lâmina é esmerilhada, lixada e polida até atingir o perfil e o acabamento desejados.</p>
+        </div>
+        <div class="step-arrow"><i class="fas fa-chevron-right"></i></div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <div class="step-icon"><i class="fas fa-temperature-high"></i></div>
+          <h3>Têmpera</h3>
+          <p>O aço é tratado termicamente para atingir a dureza ideal, garantindo fio duradouro.</p>
+        </div>
+        <div class="step-arrow"><i class="fas fa-chevron-right"></i></div>
+        <div class="step">
+          <div class="step-num">04</div>
+          <div class="step-icon"><i class="fas fa-hand-holding-heart"></i></div>
+          <h3>Montagem do Cabo</h3>
+          <p>O cabo em madeira, osso ou micarta é fixado e trabalhado à mão para perfeito encaixe.</p>
+        </div>
+        <div class="step-arrow"><i class="fas fa-chevron-right"></i></div>
+        <div class="step">
+          <div class="step-num">05</div>
+          <div class="step-icon"><i class="fas fa-check-circle"></i></div>
+          <h3>Controle de Qualidade</h3>
+          <p>Cada peça é inspecionada, afiada e embalada com cuidado antes de chegar até você.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTATO / ENCOMENDA ===================== -->
+  <section class="contato" id="contato">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Fale Conosco</span>
+        <h2>Faça sua Encomenda</h2>
+        <p>Preencha o formulário abaixo para entrar em contato ou fazer sua encomenda personalizada. Respondemos em até 24 horas!</p>
+      </div>
+      <div class="contato-grid">
+        <div class="contato-info">
+          <h3>Informações de Contato</h3>
+          <div class="contato-item">
+            <div class="contato-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <strong>Telefone / WhatsApp</strong>
+              <span>(31) 99999-0000</span>
+            </div>
+          </div>
+          <div class="contato-item">
+            <div class="contato-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <strong>E-mail</strong>
+              <span>contato@forjadomestre.com.br</span>
+            </div>
+          </div>
+          <div class="contato-item">
+            <div class="contato-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <strong>Localização</strong>
+              <span>Minas Gerais, Brasil</span>
+            </div>
+          </div>
+          <div class="contato-item">
+            <div class="contato-icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <strong>Horário de Atendimento</strong>
+              <span>Seg–Sex: 8h às 18h | Sáb: 8h às 12h</span>
+            </div>
+          </div>
+          <div class="contato-redes">
+            <a href="#" class="rede-social" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="rede-social" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="rede-social" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" class="rede-social" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <form class="contato-form" id="contatoForm" onsubmit="enviarFormulario(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nome">Nome Completo *</label>
+              <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+            </div>
+            <div class="form-group">
+              <label for="telefone">Telefone / WhatsApp *</label>
+              <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail *</label>
+            <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="tipo-faca">Tipo de Faca de Interesse</label>
+            <select id="tipo-faca" name="tipo-faca">
+              <option value="">Selecione um tipo...</option>
+              <option value="chef">Faca do Chef</option>
+              <option value="santoku">Faca Santoku</option>
+              <option value="conjunto">Conjunto de Cozinha (6 peças)</option>
+              <option value="caca">Faca de Caça</option>
+              <option value="pesca">Faca Jungle / Pesca</option>
+              <option value="sobrevivencia">Faca de Sobrevivência</option>
+              <option value="gaucha">Faca Gaúcha Tradicional</option>
+              <option value="bowie">Faca Bowie Clássica</option>
+              <option value="bushcraft">Faca Bushcraft</option>
+              <option value="personalizada">Faca Personalizada</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="mensagem">Mensagem / Detalhes da Encomenda *</label>
+            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Descreva sua encomenda, especificações desejadas, prazo, etc..." required></textarea>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" id="aceito" name="aceito" required />
+            <label for="aceito">Concordo em receber contato sobre minha encomenda.</label>
+          </div>
+          <button type="submit" class="btn-submit">
+            <i class="fas fa-paper-plane"></i> Enviar Mensagem
+          </button>
+          <div class="form-success" id="formSuccess">
+            <i class="fas fa-check-circle"></i>
+            <strong>Mensagem enviada com sucesso!</strong>
+            <p>Entraremos em contato em até 24 horas. Obrigado!</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <i class="fas fa-fire-flame-curved"></i>
+            <span>Forja do Mestre</span>
+          </div>
+          <p>Tradição, qualidade e paixão em cada faca artesanal. Forjando sonhos desde 2004.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre Nós</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Produtos</h4>
+          <ul>
+            <li><a href="#produtos">Facas de Cozinha</a></li>
+            <li><a href="#produtos">Facas de Caça</a></li>
+            <li><a href="#produtos">Facas Gaúchas</a></li>
+            <li><a href="#produtos">Facas de Sobrevivência</a></li>
+            <li><a href="#produtos">Facas de Coleção</a></li>
+          </ul>
+        </div>
+        <div class="footer-contato">
+          <h4>Contato Rápido</h4>
+          <p><i class="fas fa-phone"></i> (31) 99999-0000</p>
+          <p><i class="fas fa-envelope"></i> contato@forjadomestre.com.br</p>
+          <p><i class="fas fa-map-marker-alt"></i> Minas Gerais, Brasil</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Forja do Mestre. Todos os direitos reservados.</p>
+        <p>Desenvolvido com <i class="fas fa-heart"></i> e artesanato brasileiro</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================== MODAL PRODUTO ===================== -->
+  <div class="modal-overlay" id="modalOverlay" onclick="fecharModal()">
+    <div class="modal" id="modal" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="fecharModal()"><i class="fas fa-times"></i></button>
+      <div class="modal-content" id="modalContent"></div>
+    </div>
+  </div>
+
+  <!-- ===================== LIGHTBOX ===================== -->
+  <div class="lightbox" id="lightbox" onclick="fecharLightbox()">
+    <button class="lightbox-close" onclick="fecharLightbox()"><i class="fas fa-times"></i></button>
+    <img id="lightboxImg" src="" alt="" />
+    <p id="lightboxCaption"></p>
+  </div>
+
+  <!-- ===================== BOTÃO WHATSAPP FLUTUANTE ===================== -->
+  <a href="https://wa.me/5531999990000" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- ===================== BOTÃO VOLTAR AO TOPO ===================== -->
+  <button class="back-to-top" id="backToTop" onclick="voltarAoTopo()" aria-label="Voltar ao topo">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
